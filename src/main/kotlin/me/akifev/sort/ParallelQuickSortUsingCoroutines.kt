@@ -1,14 +1,17 @@
+package me.akifev.sort
+
 import kotlinx.coroutines.*
+import java.util.concurrent.*
 
 @OptIn(ExperimentalCoroutinesApi::class)
-fun IntArray.parallelQuickSort(parallelism: Int) =
+fun IntArray.parallelQuickSortUsingCoroutines(parallelism: Int): Unit =
     runBlocking(context = Dispatchers.Default.limitedParallelism(parallelism)) {
         coroutineScope {
-            parallelQuickSort(0, size)
+            parallelQuickSortUsingCoroutines(0, size)
         }
     }
 
-private suspend fun IntArray.parallelQuickSort(l: Int, r: Int) {
+private suspend fun IntArray.parallelQuickSortUsingCoroutines(l: Int, r: Int) {
     if (r - l < 1000) {
         sequentialQuickSort(l, r)
         return
@@ -17,10 +20,10 @@ private suspend fun IntArray.parallelQuickSort(l: Int, r: Int) {
     val m = makePartition(l, r)
     coroutineScope {
         if (m > l) {
-            launch { parallelQuickSort(l, m) }
+            launch { parallelQuickSortUsingCoroutines(l, m) }
         }
         if (r > m) {
-            launch { parallelQuickSort(m, r) }
+            launch { parallelQuickSortUsingCoroutines(m, r) }
         }
     }
 }

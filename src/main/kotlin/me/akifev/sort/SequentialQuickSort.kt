@@ -1,3 +1,6 @@
+package me.akifev.sort
+
+import me.akifev.array.swap
 import kotlin.random.Random
 
 fun IntArray.sequentialQuickSort() {

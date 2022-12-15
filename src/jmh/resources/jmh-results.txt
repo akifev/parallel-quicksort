@@ -1,0 +1,19 @@
+Benchmark                                             (arraySize)  (parallelism)  Mode  Cnt      Score     Error  Units
+ParallelQuickSortBenchmark.parallelUsingCoroutines       10000000              1  avgt   15    483.661 ±  14.949  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines       10000000              2  avgt   15    239.605 ±   4.384  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines       10000000              4  avgt   15    161.937 ±  11.901  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines       10000000              8  avgt   15    125.270 ±  11.109  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines      100000000              1  avgt   15  11552.043 ± 224.495  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines      100000000              2  avgt   15   3967.708 ± 188.811  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines      100000000              4  avgt   15   2646.403 ± 116.297  ms/op
+ParallelQuickSortBenchmark.parallelUsingCoroutines      100000000              8  avgt   15   1797.304 ±  77.501  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool     10000000              1  avgt   15    475.849 ±  21.156  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool     10000000              2  avgt   15    258.174 ±  12.380  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool     10000000              4  avgt   15    177.629 ±   9.980  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool     10000000              8  avgt   15    134.108 ±   9.679  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool    100000000              1  avgt   15  10955.850 ±  93.833  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool    100000000              2  avgt   15   3750.867 ± 374.727  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool    100000000              4  avgt   15   2529.098 ± 254.826  ms/op
+ParallelQuickSortBenchmark.parallelUsingForkJoinPool    100000000              8  avgt   15   1719.384 ± 216.477  ms/op
+SequentialQuickSortBenchmark.sequential                  10000000            N/A  avgt   15    447.785 ±  21.187  ms/op
+SequentialQuickSortBenchmark.sequential                 100000000            N/A  avgt   15  11177.246 ± 246.883  ms/op
