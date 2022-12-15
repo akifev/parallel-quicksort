@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-      default: ${{ github.repository }}
+        default: ${{ github.repository }}
 
     - name: Gradle Wrapper Validation
       uses: gradle/wrapper-validation-action@v1
