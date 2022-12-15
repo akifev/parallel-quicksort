@@ -1,4 +1,7 @@
-## Parallel Quick Sort
+# Parallel Quick Sort
+
+[![Parallel Quick Sort](https://github.com/akifev/parallel-quicksort/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/akifev/parallel-quicksort/actions/workflows/build.yml)
+
 **Parallel Quick Sort** algorithm implementation using [**Kotlin Coroutines**](https://kotlinlang.org/docs/coroutines-overview.html) and [**Java ForkJoinPool**](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html)
 
 ### JMH Benchmark Results
