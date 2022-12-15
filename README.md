@@ -8,5 +8,5 @@ ParallelQuickSortBenchmark.parallelUsingCoroutines      100000000              4
 ParallelQuickSortBenchmark.parallelUsingForkJoinPool    100000000              4  avgt   15   2529.098 ± 254.826  ms/op
 SequentialQuickSortBenchmark.sequential                 100000000            N/A  avgt   15  11177.246 ± 246.883  ms/op
 ```
-> Both implementations speed up the sequential algorithm by `4.3` times on an array of size `10^8` when using `4` native threads.
-> > For more details, see [jmh-results.txt](src/jmh/resources/jmh-results.txt)
+Both implementations speed up the sequential algorithm by `4.3` times on an array of size `10^8` when using `4` native threads.
+> For more details, see [jmh-results.txt](src/jmh/resources/jmh-results.txt)
